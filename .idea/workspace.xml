@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53fa5f4f-343e-4e14-b801-c0b675d8c23a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-    </list>
+    <list default="true" id="53fa5f4f-343e-4e14-b801-c0b675d8c23a" name="Default" comment="" />
     <ignored path="tarea2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -360,12 +357,12 @@
       <option name="presentableId" value="Default" />
       <updated>1463243439497</updated>
       <workItem from="1463243444208" duration="762000" />
-      <workItem from="1463253848007" duration="238000" />
+      <workItem from="1463253848007" duration="296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1000000" />
+    <option name="totallyTimeSpent" value="1058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
