@@ -9,7 +9,8 @@ development:
 
 test:
   <<: *default
-  database: myapp_test
+  database: travis_ci_test
+  username: postgres
 
 production:
   <<: *default
