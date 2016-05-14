@@ -2,9 +2,11 @@ language: ruby
 rvm:
 - 2.3.0
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - cp config/database.yml.travis config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
+- cp config/database.yml.travis config/database.yml
 deploy:
- provider: heroku
- app:
-   master: 'pacific-island-40602'
+  provider: heroku
+  app:
+    master: pacific-island-40602
+  api_key:
+    secure: KSm2wmYTo3FUZt2dbiAZ+wkI9iKwis3R+mKrfzj4xle9QBi0fY+kIz2Y/bMlJfiErigJyWDoV5LdJ1moUxB7J8gvL2crDV5xPfkU0nvlfjD94i7pRcfhdmvneXgTYcADwAPGMeGAeXlHLwPJMeUW96d22ZsPAgaOnlvauQOI0NMurnJEhXkJlaNUU7rXU2zloUu8F2ZqvN6k+NQL/7k1fXWIAXmNONVtXLndVh9a5PnF7DDf2JyMJzBuGABnw2mLcMum5mZX+T1Zj+jrJLNsOq+BiJ9/hhhAXGWcDio6STdVVH/2vXKTr6WRSrP6V2groFZq7pjb82v0CdazWoBjWcRF7HtNdybcKv6A4t/sG7QLbr+OtJ3BEJgcCZPG+W7K8PYnvM3AxQV+NOeaaw9RXexjSfkEfDkiEXLuhLsvGfpAvQ9rbCrVQQpCRJ2AX/W2FDHhFClm0H9LGzUIvFs+tXxC7/4ma2hIa0zRvoJEeOjTZZUJjJ1lUZJSEHBOeKts4jVot4dJEFPR3M2bntn1HFaEOhWRNpfrXSfpYUvMSVQp6YhcEnmkVmM3/8symTsVQ9k2HHbaNuQkMD02TAf2CRShbRT9ffV3tdh/YzLe0iM8ylCauelQGZJH4g9I5RHq+ThdPODqN0b/Ibu2pyjQ3u031iuqYSHc5hfPZFMExEM=
