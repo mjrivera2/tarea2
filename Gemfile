@@ -50,3 +50,5 @@ end
 gem 'responders'
 
 gem 'httparty'
+
+gem 'coveralls', require: false
