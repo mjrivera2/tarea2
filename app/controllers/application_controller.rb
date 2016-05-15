@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
           }
           @new_tags << @new_tag
         end
-        render status: 200, json: JSON.pretty_generate({metadata: {total: @tags_count}, posts: @new_tags, version: "1.2.0"})
+        render status: 200, json: {metadata: {total: @tags_count}, posts: @new_tags, version: "1.2.1"}
       else
         render status: 404, json: "Not found"
       end

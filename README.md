@@ -1,3 +1,5 @@
+## VERSION
+1.2.1
 
 ## TRAVIS BUILD STATUS
 [![Build Status](https://travis-ci.org/mjrivera2/tarea2.svg?branch=deploy)](https://travis-ci.org/mjrivera2/tarea2)
