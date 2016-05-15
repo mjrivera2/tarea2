@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
 
 
   def buscar
-
     if(!params.key?("tag") or !params.key?("access_token"))
       render status: 400, json: "Bad request"
     else
@@ -32,13 +31,14 @@ class ApplicationController < ActionController::Base
           }
           @new_tags << @new_tag
         end
-        render status: 200, json: JSON.pretty_generate({metadata: {total: @tags_count}, posts: @new_tags, version: "1.0.1"})
+        render status: 200, json: JSON.pretty_generate({metadata: {total: @tags_count}, posts: @new_tags, version: "1.2.0"})
       else
         render status: 404, json: "Not found"
       end
 
     end
   end
+
   #Metodo para retornar Json
   def self.respond_to(*mimes)
     include ActionController::RespondWith::ClassMethods
